@@ -6,11 +6,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class ChiffresRomainsTest {
-	private ChiffresRomains cr;
+	private ChiffresRomains cr = new ChiffresRomains();;
 
 	@BeforeEach
 	void setUp() throws Exception {
-		cr = new ChiffresRomains();
 	}
 
 	@Test
@@ -52,6 +51,12 @@ class ChiffresRomainsTest {
 	@Test
 	void iter7() {
 		assertEquals("XXX", cr.toChiffresRomains(30));
+	}
+	
+	@Test 
+	void iter8() {
+		assertEquals("XI", cr.toChiffresRomains(11));
+		assertEquals("XXXIV", cr.toChiffresRomains(34));
 	}
 	
 

@@ -32,17 +32,15 @@ public class ChiffresRomains {
 			} else if (nombre > keyValues[index]) {
 				sb.append(litterals[index]);
 				nombre -= keyValues[index];
-			}
-			if (nombre == 9) {
+			} else if (nombre == 9) {
 				sb.append("IX");
 				nombre = 0;
-			}
-			if (nombre == 4) {
+			} else if (nombre == 4) {
 				sb.append("IV");
 				nombre = 0;
+			} else {
+				index--;
 			}
-			
-			index--;
 		}
 		
 		return sb.toString();
