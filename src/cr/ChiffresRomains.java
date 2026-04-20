@@ -7,7 +7,11 @@ public class ChiffresRomains {
 	}
 	
 	public String toChiffresRomains(int nombre) {
-		StringBuilder sb = new StringBuilder("I");
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < nombre; i++) {
+			sb.append("I");
+			
+		}
 		return sb.toString();
 	}
 
