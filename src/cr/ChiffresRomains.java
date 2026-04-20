@@ -13,6 +13,11 @@ public class ChiffresRomains {
 		
 		StringBuilder sb = new StringBuilder();
 		
+		
+		if (nombre == 9) {
+			sb.append("IX");
+			nombre = 0;
+		}
 		if (nombre >= 5) {
 			sb.append("V");
 			nombre -= 5; 
@@ -24,6 +29,7 @@ public class ChiffresRomains {
 		}
 		if (nombre == 4) {
 			sb.append("IV");
+			nombre = 0;
 		}
 		
 		return sb.toString();

@@ -44,5 +44,10 @@ class ChiffresRomainsTest {
 		assertEquals("VIII", cr.toChiffresRomains(8));
 	}
 	
+	@Test 
+	void iter6() {
+		assertEquals("IX", cr.toChiffresRomains(9));
+	}
+	
 
 }
