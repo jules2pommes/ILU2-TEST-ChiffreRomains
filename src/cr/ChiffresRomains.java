@@ -13,11 +13,17 @@ public class ChiffresRomains {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		if (nombre == 4) {
-			sb.append("IV");
-		} else {
+		if (nombre >= 5) {
+			sb.append("V");
+			nombre -= 5; 
+		} 
+		if (nombre <= 3) {
 			for (int i = 0; i < nombre; i++)
 				sb.append("I");
+			nombre = 0;
+		}
+		if (nombre == 4) {
+			sb.append("IV");
 		}
 		
 		return sb.toString();
