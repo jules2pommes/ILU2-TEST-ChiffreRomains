@@ -13,4 +13,9 @@ class ChiffresRomainsTest {
 		cr = new ChiffresRomains();
 	}
 
+	@Test
+	void iter1() {
+		assertEquals("I", cr.toChiffresRomains(1));
+	}
+
 }
