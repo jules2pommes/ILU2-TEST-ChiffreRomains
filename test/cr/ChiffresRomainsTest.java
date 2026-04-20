@@ -23,5 +23,12 @@ class ChiffresRomainsTest {
 		assertEquals("II", cr.toChiffresRomains(2));
 		assertEquals("III", cr.toChiffresRomains(3));
 	}
+	
+	@Test
+	void iter3() {
+		assertThrows(IllegalArgumentException.class, () -> cr.toChiffresRomains(-1));
+		assertThrows(IllegalArgumentException.class, () -> cr.toChiffresRomains(0));
+		assertThrows(IllegalArgumentException.class, () -> cr.toChiffresRomains(4000));
+	}
 
 }
