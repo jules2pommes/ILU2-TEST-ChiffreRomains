@@ -13,9 +13,4 @@ class ChiffresRomainsTest {
 		cr = new ChiffresRomains();
 	}
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
-
 }
